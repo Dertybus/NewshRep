@@ -18,7 +18,7 @@ for (let i = 1; i < ne + 1; i++) {
 }
 
 for (let i = 0; i < ne; i++) {
-    const r = Math.floor(Math.random() * n);
+    const r = Math.floor(Math.random() * ne);
     [arrfg[i], arrfg[r]] = [arrfg[r], arrfg[i]];
 }
 
