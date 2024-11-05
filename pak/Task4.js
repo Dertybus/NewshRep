@@ -19,7 +19,7 @@ const emailList = [
 ];
 
 const blacklist = [
-    'whynot123example.com',
+    'whynot123@example.com',
     'julio32@example.com'
 ];
 
