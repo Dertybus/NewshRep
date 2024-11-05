@@ -33,7 +33,7 @@ for (let i = 1; i < ngl + 1; i++) {
 }
 
 for (let i = 0; i < ngl; i++) {21
-    const ra = Math.floor(Math.random() * n);
+    const ra = Math.floor(Math.random() * ngl);
     [arreo[i], arreo[ra]] = [arreo[ra], arreo[i]];
 }
 console.log(arreo);
