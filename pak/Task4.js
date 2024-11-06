@@ -23,7 +23,7 @@ const blackList = [
     'julio32@example.com'
 ];
 
-const result = filter(emailList, blacklist); 
+const result = filter(emailList, blackList); 
 console.log(result);
 
 //task3
