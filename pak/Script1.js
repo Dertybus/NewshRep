@@ -68,10 +68,10 @@ function testA(c) {
 
 
 
-function testSum(aba, bob) {
-    var xfg;
-    xfg = aba + bob;
-    return xfg;
+function testSum(numder1, number2) {
+    var symma;
+    symma = number1 + number2;
+    return symma;
 
 }
 
