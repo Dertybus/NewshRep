@@ -28,8 +28,7 @@ console.log(result);
 
 //task3
 function arrSort(arr) {
-    const sortedArray = arr.sort((a, b) => a - b);
-    return sortedArray; 
+    return arr.sort((a, b) => a - b);
 }
 
 console.log(arrSort([54, 32, 11, 323, 44])); 
