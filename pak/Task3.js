@@ -33,8 +33,8 @@ for (let i = 1; i < testnum + 1; i++) {
 }
 
 for (let i = 0; i < testnum; i++) {21
-    const ra = Math.floor(Math.random() * testnum);
-    [area[i], area[ra]] = [area[ra], area[i]];
+    const mathrand = Math.floor(Math.random() * testnum);
+    [area[i], area[mathrand]] = [area[mathrand], area[i]];
 }
 console.log(area);
 console.log(area.indexOf(3));
