@@ -9,40 +9,72 @@ function randomArray (count, na, m) {
     return array;
 }
 console.log(randomArray(100, 0, 100));
+
 //task2
-const scobki = [];
-const chislo = 5;
+function shuflingArray(count) {
+    let array = [];
+    for (let i = 1; i <= count; i++) {
+        array.push(i);
+    }
+    let reshuflArr = [];
+    while (array.length > 0) {
+        const randind = Math.floor(Math.random() * array.length);
+        reshuflArr.push(array[randind]);
+        array.splice(randind, 1);
+    }
 
-for (let i = 1; i < chislo + 1; i++) {
-    scobki.push(i);
+    console.log(reshuflArr);
 }
 
-for (let i = 0; i < chislo; i++) {
-    const r = Math.floor(Math.random() * chislo);
-    [scobki[i], scobki[r]] = [scobki[r], scobki[i]];
+shuflingArray(5);
+shuflingArray(7); 
+shuflingArray(3);
+/*
+function createAndShuffleArray(count) {
+    let array = [];
+    for (let i = 1; i <= count; i++) {
+        array.push(i);
+    }
+
+    // Перемешиваем массив с помощью алгоритма Фишера — Йетса
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    console.log(array);
 }
 
-console.log(arrfg, fng);
+createAndShuffleArray(5);
+createAndShuffleArray(7);
+createAndShuffleArray(3); 
+*/
+
 //task3
-const area = [];
-const testnum = 7;
-const testnum2 = 3
+function findElementIndex(arraything, elementalrno) {
+    let index = -1;
 
-for (let i = 1; i < testnum + 1; i++) {
-    area.push(i);
+    for (let i = 0; i < array.length; i++) {
+        if (arraything[i] === elementarno) {
+            index = i;
+            break;
+        }
+    }
+
+    if (index == -1) {
+        console.log(`Элемент ${element} не найден в массиве.`);
+    } else {
+        console.log(`Элемент ${element} найден на индексе ${index}.`);
+    }
 }
 
-for (let i = 0; i < testnum; i++) {21
-    const mathrand = Math.floor(Math.random() * testnum);
-    [area[i], area[mathrand]] = [area[mathrand], area[i]];
-}
-console.log(area);
-console.log(area.indexOf(3));
+// Пример использования
+const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+findElementIndex(a, 5);
+
+
 //task4
-const area1 = [2, 2, 17, 21, 45, 12, 54, 31, 53];
+let area1 = [2, 2, 17, 21, 45, 12, 54, 31, 53];
 
-const area2 = [12, 44, 23, 5];
+let area2 = [12, 44, 23, 5];
 
-const arra3 = area1.concat(area2);
-
-console.log(area3)
+console.log(area1.concat(area2))

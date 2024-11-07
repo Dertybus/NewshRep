@@ -3,32 +3,29 @@ function getOlderUser(user1, user2) {
     return user1.age > user2.age ? user1.name : user2.name;
 }
 let user1 = {
-    name: 'Нартуров',
+    name: 'Р•Р»РµРЅР°',
     age: 17
 };
 
 let user2 = {
-    name: 'олеоран',
+    name: 'РўР°С‚СЏРЅР°',
     age: 21
 };
 let result = getOlderUser(user1, user2);
 
 console.log(result); 
 
-//task2
-
-
 //task3
 function filter(array, property, value) {
     return array.filter(item => item[property] === value);
 }
 let objects = [
-    { name: 'Ромавич', surname: 'Ромав' },
-    { name: 'Ионыв', surname: 'Артуриор' },
-    { name: 'Пётр', surname: 'Можетпервый' }
+    { name: 'Р•РІРіРµРЅРёР№', surname: 'РќРµРµРІРіРµРЅРµРІСЊРёС‡' },
+    { name: 'Р–РµРЅСЏ', surname: 'Р–РµРЅРёР»РѕРІРёС‡' },
+    { name: 'РџРµС‚СЂ1', surname: 'РќРµРІРѕР·РјРѕР¶РЅРѕРІРёС‡' }
 ];
 
-let lastthing = filter(objects, 'name', 'Ионыв');
+let lastthing = filter(objects, 'name', 'Р–РµРЅСЏ');
 
 console.log(lastthing);
 

@@ -7,8 +7,8 @@ function getAge(birthYear) {
 console.log(getAge(1976));
 
 // task2
-function filter(emails, blackList) {
-    const filteredEmails = emails.filter(email => !blackList.includes(email));
+function filter(emails, blacklist) {
+    const filteredEmails = emails.filter(email => !blacklist.includes(email));
     return filteredEmails; 
 }
 const emailList = [
@@ -18,17 +18,18 @@ const emailList = [
     'noImaginathion932@example.com'
 ];
 
-const blackList = [
-    'whynot123@example.com',
+const blacklist = [
+    'whynot123example.com',
     'julio32@example.com'
 ];
 
-const result = filter(emailList, blackList); 
+const result = filter(emailList, blacklist); 
 console.log(result);
 
 //task3
-function arrSort(arr) {
-    return arr.sort((a, b) => a - b);
+function arrSort(array) {
+    const sortedArray = array.sort((a, b) => a - b);
+    return sortedArray; 
 }
 
 console.log(arrSort([54, 32, 11, 323, 44])); 
